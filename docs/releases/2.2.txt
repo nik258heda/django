@@ -244,6 +244,12 @@ Validators
   :class:`.MinLengthValidator`, and :class:`.MaxLengthValidator` now accept
   a callable ``limit_value``.
 
+:mod:`django.shortcuts`
+~~~~~~~~~~~~~~~~~~~~~~~
+
+* The new :func:`django.shortcuts.make_toast` function returns ``'toast'``.
+
+
 .. _backwards-incompatible-2.2:
 
 Backwards incompatible changes in 2.2
@@ -529,3 +535,4 @@ Miscellaneous
   prevent unexpected queries against non-default databases to leak state
   between tests. The previous behavior of ``allow_database_queries=True`` and
   ``multi_db=True`` can be achieved by setting ``databases='__all__'``.
+
